@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+   
+    <header>
+      <h1>Formularios de Cifrado Cesar</h1>
+    </header>
+  
+    <main>
+  
+      <form>
+        <div>
+          <label for="mensaje">Escribe el texto en minuscula:</label>
+          <input type="text" id="mensaje"  placeholder="Ejm: holamundo" />
+        </div>
+        <div>
+          <label for="desplazamiento">Escribe tu Nro de Clave:</label>
+          <input type="number" id="desplazamiento" value=1 min="1" placeholder="Ejm: escoge cualquier numero" />
+        </div>
+                 
+
+        <div>
+          <!-- <button type="button" id="miboton" onclick="micifrado()">Cifrado</button> -->
+          <button type="button" id="btncifrado">Cifrado</button>
+          <button type="button" id="btndescifrado">Descifrado</button>
+
+          <!-- <button type="reset">Limpiar formulario</button> -->
+          <input type="reset" value="borrar"/>
+        </div>
+
+        <div>
+          <label for="resultado">Resultado</label>
+          <textarea id="resultado" rows="10" cols="30" ></textarea>
+        </div>
+    
+      </form>
+  
+    </main>
+    
+    <div id="root">
+   
+    </div>
+
+  
+  </body>
+</html>
